@@ -3,9 +3,9 @@ name: hello
 on:
   push:
     branches: [main]
-
+#those are jobs inside the workflow
 jobs:
-
+# this is github runner, each job runs a runner
   greet:
     runs-on: ubuntu-latest
 
@@ -15,7 +15,7 @@ jobs:
 
       - name: Say hello to username
         run: echo "Hello ${{ github.actor }}"
-
+#this is the name of the job 2
   details:
     runs-on: ubuntu-latest
 
