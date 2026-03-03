@@ -1,29 +1,24 @@
-#this is a wrkflow 
 name: hello
 
 on:
   push:
     branches: [main]
-# this are jobs inside the workflow
+
 jobs:
 
-  # this are name of job 
-
   greet:
-
-  # this are github runner, eacho on a runner
     runs-on: ubuntu-latest
 
     steps:
-      - name: say hello to users
+      - name: Say hello to users
         run: echo "Hello dosto"
 
-details:
-  runs-on: ubuntu-latest
+      - name: Say hello to username
+        run: echo "Hello ${{ github.actor }}"
 
-  steps:
-    - name: version of python, docker, etc
-      run: docker --version && python --version
+  details:
+    runs-on: ubuntu-latest
 
-      - name: say hello to username
-        run: echo "Hello $usernaame"
+    steps:
+      - name: Version of Python and Docker
+        run: docker --version && python --version
