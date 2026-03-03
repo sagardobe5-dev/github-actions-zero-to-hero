@@ -1,11 +1,17 @@
+#this is a wrkflow 
 name: hello
 
 on:
   push:
     branches: [main]
-
+# this are jobs inside the workflow
 jobs:
+
+  # this are name of job 
+
   greet:
+
+  # this are github runner, eacho on a runner
     runs-on: ubuntu-latest
 
     steps:
