@@ -1,31 +1,25 @@
-Create a modern and responsive personal portfolio website using only HTML and CSS.
+name: hello
 
-My details:
+on:
+  workflow_dispatch:
 
-Name: Sagar
-Location: Bangalore
-Date of Birth: 30/05/1999
-Role: DevOps Engineer (Beginner)
-Experience:
-- Linux: 2 years
-- Docker: 1 year
-- Kubernetes: 1 year
+#those are jobs inside the workflow
+jobs:
+# this is github runner, each job runs a runner
+  greet:
+    runs-on: ubuntu-latest
 
-Hobbies:
-- Dancing
-- Swimming
-- Cricket
+    steps:
+      - name: Say hello to users
+        run: echo "Hello dosto"
 
-Requirements:
-- Create a clean index.html file
-- Add a navigation bar (Home, About, Skills, Hobbies, Contact)
-- Add a hero section with my name and role
-- Add an About section with my details
-- Add a Skills section with progress bars
-- Add a Hobbies section with icons or styled list
-- Add a Contact section with email placeholder
-- Use modern CSS styling
-- Make it responsive for mobile
-- Use a dark theme
-- Do not use JavaScript
-- Keep everything inside a single index.html file
+      - name: Say hello to username
+        run: echo "Hello ${{ github.actor }}"
+#this is the name of the job 2
+  details:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Version of Python and Docker
+        run: docker --version && python --version
+
