@@ -1,0 +1,31 @@
+Create a modern and responsive personal portfolio website using only HTML and CSS.
+
+My details:
+
+Name: Sagar
+Location: Bangalore
+Date of Birth: 30/05/1999
+Role: DevOps Engineer (Beginner)
+Experience:
+- Linux: 2 years
+- Docker: 1 year
+- Kubernetes: 1 year
+
+Hobbies:
+- Dancing
+- Swimming
+- Cricket
+
+Requirements:
+- Create a clean index.html file
+- Add a navigation bar (Home, About, Skills, Hobbies, Contact)
+- Add a hero section with my name and role
+- Add an About section with my details
+- Add a Skills section with progress bars
+- Add a Hobbies section with icons or styled list
+- Add a Contact section with email placeholder
+- Use modern CSS styling
+- Make it responsive for mobile
+- Use a dark theme
+- Do not use JavaScript
+- Keep everything inside a single index.html file
